@@ -1,0 +1,243 @@
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.backdrop {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #503472, #372570 20%);
+    background-size: 100% 100%;
+}
+
+.bottom
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#gradient
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 25%;
+}
+
+
+/*      LOGO     */
+.vulix {
+    position: absolute;
+    max-width: 400px;
+    min-width: 400px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*      LOGO     */
+/*      END     */
+
+
+/*      DISCORD     */
+.discord {
+    position: absolute;
+    max-width: 50px;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.discord_text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1.5px 2px #fff;
+    max-width: 50px;
+    /* You may need to change top and left if you change discord.gg/vulix */
+    top: 84%;
+    left: 46.5%;
+    /* i am still working with it */
+    transform: translateX(-50%) translateY(-50%);
+    font-family: Arial;
+    font-size: 20px;
+}
+
+/*      DISCORD     */
+
+
+
+
+/*KEYBINDS*/
+
+.keybinds {
+    color: rgb(255, 255, 255);
+    background-color: #503472bb;
+    border-radius: 3px;
+    
+    text-decoration: none;
+    float: left;
+    margin-left: 5%;
+    text-transform: uppercase;
+    margin-top: 15%;
+    width: 400px;
+    height: 400px;
+    animation: 20s rotate linear infinite,shake-slow2 10s ease-in-out infinite,gradient 15s ease infinite;
+    text-shadow: 1px 1.5px 2px #fff;
+    box-shadow: -1.5px -2px 2px #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title-keybinds {
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.keybinds-li {
+    text-align: center;
+    margin-left: -30px;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px auto;
+    color: white;
+    padding: 2px 2px;
+    animation: travel 4s;
+}
+
+/*keybinds*/
+
+
+
+
+/*REGLER*/
+
+.rules {
+    color: white;
+    background-color: #503472bb;
+    border-radius: 3px;
+    text-decoration: none;
+    float: right;
+    margin-right: 6%;
+    margin-top: 15%;
+    width: 400px;
+    height: 400px;
+    animation: 20s rotate linear infinite,shake-slow 10s ease-in-out infinite,gradient 15s ease infinite;
+    text-shadow: 1px 1.5px 2px #fff;
+    box-shadow: 1.5px 2px 2px #fff;
+}
+
+.title-rules {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box-rules-li {
+    text-align: center;
+    margin-left: -30px;
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px auto;
+    color: white;
+    padding: 2px 2px;
+    animation: travel 4s;
+}
+
+
+
+/*REGLER*/
+
+
+
+
+
+
+.letni
+{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 10%;
+    z-index: 5;
+    color: #fff;
+}
+
+.letni p {
+    font-size: 22px;
+    margin-left: 3px;
+    margin-top: 0px;
+}
+
+.letni h2, .letni h3 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 0px;
+    display: inline-block;
+}
+
+
+.loadbar {
+    filter: drop-shadow(3px 5px 2px #00000080); 
+    width: 40%;
+    background-color: transparent;
+    border: 4px solid #0000001f;
+    border-radius: 50px;
+    height: 40px;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.thingy {
+    width: 10%;
+    background: repeating-linear-gradient(135deg, #503472, #372570 25%);
+    border-radius: 15px;
+    height: 40px;
+    position: absolute;
+    left: 10%;
+}
+
+@keyframes shake-slow2{
+    0%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(30deg)}
+    15%{transform:translate(4px, 2px) rotate(-.1deg) perspective(1600px) rotateY(30deg)}
+    30%{transform:translate(3px, -5px) rotate(0.5deg) perspective(1600px) rotateY(30deg)}
+    50%{transform:translate(4px, -3px) rotate(-.5deg) perspective(1600px) rotateY(30deg)}
+    70%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(30deg)}
+    85%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(30deg)}
+    100%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(30deg)}
+
+}
+
+@keyframes shake-slow{
+    0%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(-20deg)}
+    15%{transform:translate(4px, 2px) rotate(-.1deg) perspective(1600px) rotateY(-20deg)}
+    30%{transform:translate(3px, -5px) rotate(0.5deg) perspective(1600px) rotateY(-20deg)}
+    50%{transform:translate(4px, -3px) rotate(-.5deg) perspective(1600px) rotateY(-20deg)}
+    70%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(-20deg)}
+    85%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(-20deg)}
+    100%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(-20deg)}
+
+}

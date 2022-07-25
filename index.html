@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="backdrop">
+
+            <div class="letni">
+                <div class="loadbar"><div class="thingy"></div></div>
+            </div>
+            <img class="vulix" src="img/logo.png">
+            <img class="discord" src="img/discord.png">
+            <h1 class="discord_text">DISCORD.GG/VULIX</h1>
+            <div class="keybinds">
+                <h1 class="title-keybinds">KEYBINDS</h1>
+                <ul class="keybinds-list">
+                    <li class="keybinds-li"><a class="taste">F1</a> - Telefon</li>
+                    <li class="keybinds-li"><a class="taste">F2</a> - Inventory</li>
+                    <li class="keybinds-li"><a class="taste">F3</a> - Animationer</li>
+                    <li class="keybinds-li"><a class="taste">F6</a> - Jobbmeny</li>
+                    <li class="keybinds-li"><a class="taste">H</a> - Klädes Meny</li>
+                    <li class="keybinds-li"><a class="taste">M</a> - Fordons Meny</li>
+                    <li class="keybinds-li"><a class="taste">X</a> - Ta upp händer</li>
+                </ul>
+            </div>
+
+            <div class="rules">
+                <h1 class="title-rules">REGLER</h1>
+                <ul class="rules-list">
+                    <li class="box-rules-li"><a class="taste"></a> Ingen VDM</li>
+                    <li class="box-rules-li"><a class="taste"></a> Ingen RDM</li>
+                    <li class="box-rules-li"><a class="taste"></a> Sunt förnuft</li>
+                    <li class="box-rules-li"><a class="taste"></a> Powergaming</li>
+                    <li class="box-rules-li"><a class="taste"></a> Metagaming</li>
+                    <li class="box-rules-li"><a class="taste"></a> Copbaiting</li>
+                    <li class="box-rules-li"><a class="taste"></a> Combat Log</li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div id="gradient">
+                </div>
+            </div>
+        </div>
+
+<script type="text/javascript">
+
+var count = 0;
+var thisCount = 0;
+
+const handlers = {
+    startInitFunctionOrder(data)
+    {
+        count = data.count;
+
+        document.querySelector('.letni h3').innerHTML += emoji[data.type][data.order - 1] || '';
+    },
+
+    initFunctionInvoking(data)
+    {
+        document.querySelector('.thingy').style.left = '0%';
+        document.querySelector('.thingy').style.width = ((data.idx / count) * 100) + '%';
+    },
+
+    startDataFileEntries(data)
+    {
+        count = data.count;
+
+        document.querySelector('.letni h3').innerHTML += "\u{1f358}";
+    },
+
+    performMapLoadFunction(data)
+    {
+        ++thisCount;
+
+        document.querySelector('.thingy').style.left = '0%';
+        document.querySelector('.thingy').style.width = ((thisCount / count) * 100) + '%';
+    },
+
+    onLogLine(data)
+    {
+        document.querySelector('.letni p').innerHTML = data.message + "..!";
+    }
+};
+
+window.addEventListener('message', function(e)
+{
+    (handlers[e.data.eventName] || function() {})(e.data);
+});
+</script>
+        <!-- MUSIC START -->
+        <audio id="leson" src="xd.mp3" autoplay="true" hidden="true" loop="true"/>
+
+        <script>
+        var play = false;
+        var myAudio = document.getElementById("leson");
+            
+        myAudio.volume = 0.1;
+        
+        function onKeyDown(event) {
+          switch (event.keyCode) {
+            case 32: // Spacebar              
+              if (play) {
+                myAudio.pause(); 
+                play = false;
+              } else {
+                myAudio.play();
+                play = true;
+              }
+            break;
+            }
+              return false;
+            }
+        
+        window.addEventListener("keydown", onKeyDown, false);
+        </script>
+        <!-- MUSIC END -->
+    </body>
+</html>
