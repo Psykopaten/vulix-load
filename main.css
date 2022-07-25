@@ -232,12 +232,12 @@ ul {
 }
 
 @keyframes shake-slow{
-    0%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(-20deg)}
-    15%{transform:translate(4px, 2px) rotate(-.1deg) perspective(1600px) rotateY(-20deg)}
-    30%{transform:translate(3px, -5px) rotate(0.5deg) perspective(1600px) rotateY(-20deg)}
-    50%{transform:translate(4px, -3px) rotate(-.5deg) perspective(1600px) rotateY(-20deg)}
-    70%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(-20deg)}
-    85%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(-20deg)}
-    100%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(-20deg)}
+    0%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(-25deg)}
+    15%{transform:translate(4px, 2px) rotate(-.1deg) perspective(1600px) rotateY(-25deg)}
+    30%{transform:translate(3px, -5px) rotate(0.5deg) perspective(1600px) rotateY(-25deg)}
+    50%{transform:translate(4px, -3px) rotate(-.5deg) perspective(1600px) rotateY(-25deg)}
+    70%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(-25deg)}
+    85%{transform:translate(-3px, 3px) rotate(1.2deg) perspective(1600px) rotateY(-25deg)}
+    100%{transform:translate(0, 0) rotate(0) perspective(1600px) rotateY(-25deg)}
 
 }
