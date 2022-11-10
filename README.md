@@ -1,4 +1,4 @@
-# vulix-load
+## vulix-load
 When you change text on discord.gg/vulix you will need to change in main.css left and top, You can find it on line 63 and 64.
 
 # Visitor Count
