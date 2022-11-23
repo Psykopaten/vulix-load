@@ -51,7 +51,8 @@ body
     max-width: 50px;
     top: 80%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
 }
 .discord_text {
     position: absolute;
@@ -63,7 +64,8 @@ body
     top: 84%;
     left: 46.5%;
     /* i am still working with it */
-    transform: translateX(-50%) translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
     font-family: Arial;
     font-size: 20px;
 }
